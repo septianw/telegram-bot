@@ -1,0 +1,12 @@
+--- tg/tgl/structures.c
++++ tg/tgl/structures.c
+@@ -994,7 +994,8 @@ void tglf_fetch_message_media_new (struct tgl_state *TLS, struct tgl_message_med
+     M->venue.venue_id = DS_STR_DUP (DS_MM->venue_id);   
+     break;
+   default:
+-    assert (0);
++    M->type = tgl_message_media_unsupported;
++    break;
+   }
+ }
+ 
