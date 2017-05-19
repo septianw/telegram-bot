@@ -1,3 +1,7 @@
+function sleep(s)
+  local ntime = os.clock() + s
+  repeat until os.clock() > ntime
+end
 
 local function run(msg, matches)
   local text = matches[1]
@@ -12,18 +16,22 @@ local function run(msg, matches)
   end
 
   if text == "Kamu berhasil memanen" then
+    sleep(3)
     out = "/siram"
   end
 
   if text == "hasil siap diambil" then
+    sleep(3)
     out = "/ambilHasil"
   end
 
   if text == "Kamu memperoleh" then
+    sleep(3)
     out = "/beriMakan"
   end
 
   if text == "siap panen" then
+    sleep(3)
     out = "/ambilPanen"
   end
 

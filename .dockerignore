@@ -1,0 +1,9 @@
+.bash_history
+bash_history_init
+.cache
+.luarocks
+.ssh
+.telegram-cli
+.viminfo
+/home/asep/workspace/docker/telegram-bot/tg
+/home/asep/workspace/docker/telegram-bot/tg/*
