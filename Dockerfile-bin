@@ -1,0 +1,11 @@
+FROM ailispaw/ubuntu-essential:14.04-nodoc
+
+#  telegram-cli -k ./tg-server.pub -s ./bot/bot.lua -l 1 -E $@
+
+ADD . /root
+ADD tg/bin/* /usr/local/bin/
+ADD tg/tg-server.pub /root/tg-server.pub
+WORKDIR /root/
+VOLUME /root/.telegram-cli
+
+CMD launch.sh
