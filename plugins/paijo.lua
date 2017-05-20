@@ -35,8 +35,8 @@ local function run(msg, matches)
     out = "/ambilPanen"
   end
 
-  if text == "/tidur" then
-    out = "/tidur"
+  if text == "keamanan kembali diaktifkan" then
+    out = "/newaddress"
   end
 
   return out
@@ -52,7 +52,7 @@ return {
     "(hasil siap diambil)",
     "(Kamu memperoleh)",
     "(siap panen)",
-    "(/tidur)"
+    "(keamanan kembali diaktifkan)",
   }, 
   run = run 
 }
